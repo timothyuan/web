@@ -400,7 +400,7 @@ module.exports = function (grunt) {
           dot: true,
             cwd: 'bower_components/videogular-themes-default', 
             src: ['fonts/*.*'],
-            dest: '<%= yeoman.dist %>'
+            dest: '<%= yeoman.dist.styles %>'
           }]
         },
       styles: {
