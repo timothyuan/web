@@ -8,7 +8,30 @@
  *
  * Main module of the application.
  */
-angular
-  .module('webApp', [
-    'ngSanitize'
-  ]);
+ var app = angular.module('webApp', [
+ 	'ngSanitize',
+ 	'ui.router',
+ 	'angularModalService',
+ 	'com.2fdevs.videogular',
+ 	'com.2fdevs.videogular.plugins.controls',
+ 	'com.2fdevs.videogular.plugins.overlayplay',
+ 	'com.2fdevs.videogular.plugins.poster'
+ 	]);
+ app.config(function($stateProvider, $urlRouterProvider) {
+ 	$urlRouterProvider.otherwise('/home');
+
+ 	$stateProvider
+
+ 	.state('home', {
+ 		url: '/home',
+ 		templateUrl: 'views/home.html'
+ 	})
+
+ 	.state('people', {
+ 		url: '/people',
+ 		templateUrl: 'views/people.html',
+ 		controller: 'MainCtrl',
+ 		controllerAs: 'main'
+ 	})
+
+ });

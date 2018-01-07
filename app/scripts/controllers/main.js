@@ -7,11 +7,22 @@
  * # MainCtrl
  * Controller of the webApp
  */
-angular.module('webApp')
-  .controller('MainCtrl', function () {
-    this.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
-  });
+app.controller('MainCtrl', function (ModalService) {
+	this.show = function(Id){
+		ModalService.showModal({
+			templateUrl: 'views/modal.html',
+			controller: 'ModalCtrl as ctrl',
+			inputs: {
+				Id: Id
+			}
+		}).then(function(modal) {
+			modal.element.modal({
+				backdrop: 'static',	
+				keyboard: false
+			});
+			modal.close.then(function(result) {
+			})
+		})
+	}
+
+});
