@@ -382,7 +382,7 @@ module.exports = function (grunt) {
             'images/{,*/}*.{webp}',
             'styles/fonts/{,*/}*.*',
             'res/thumbnails/*',
-            'res/videos/*'
+            'res/videos/*',
           ]
         }, {
           expand: true,
@@ -394,6 +394,16 @@ module.exports = function (grunt) {
           cwd: 'bower_components/bootstrap/dist',
           src: 'fonts/*',
           dest: '<%= yeoman.dist %>'
+        },
+        {
+          expand: true,
+          flatten: true,
+          dest: 'dist/fonts/',
+          src: ['bower_components/videogular-themes-default/videogular.ttf',
+          'bower_components/videogular-themes-default/videogular.woff',
+          'bower_components/videogular-themes-default/videogular.eot',
+          'bower_components/videogular-themes-default/videogular.svg'
+          ]
         }]
       },
       styles: {
