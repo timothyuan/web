@@ -397,15 +397,12 @@ module.exports = function (grunt) {
         },
         {
           expand: true,
-          flatten: true,
-          dest: 'dist/styles/fonts/',
-          src: ['bower_components/videogular-themes-default/videogular.ttf',
-          'bower_components/videogular-themes-default/videogular.woff',
-          'bower_components/videogular-themes-default/videogular.eot',
-          'bower_components/videogular-themes-default/videogular.svg'
-          ]
-        }]
-      },
+          dot: true,
+            cwd: 'bower_components/videogular-themes-default', 
+            src: ['fonts/*.*'],
+            dest: '<%= yeoman.dist %>'
+          }]
+        },
       styles: {
         expand: true,
         cwd: '<%= yeoman.app %>/styles',
