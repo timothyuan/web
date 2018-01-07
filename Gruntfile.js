@@ -398,7 +398,7 @@ module.exports = function (grunt) {
         {
           expand: true,
           flatten: true,
-          dest: 'dist/fonts/',
+          dest: 'dist/styles/fonts/',
           src: ['bower_components/videogular-themes-default/videogular.ttf',
           'bower_components/videogular-themes-default/videogular.woff',
           'bower_components/videogular-themes-default/videogular.eot',
