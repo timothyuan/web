@@ -399,8 +399,8 @@ module.exports = function (grunt) {
           expand: true,
           dot: true,
             cwd: 'bower_components/videogular-themes-default', 
-            src: ['fonts/*.*'],
-            dest: '<%= yeoman.dist.styles %>'
+            src: 'fonts/*',
+            dest: '<%= yeoman.dist %>/styles'
           }]
         },
       styles: {
