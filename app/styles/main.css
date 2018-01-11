@@ -2,7 +2,7 @@
   box-sizing: border-box;
 }
 .bgimg {
-  background-image: url('../res/thumbnails/background.jpg');
+  background-image: url('https://github.com/timothyuan/web/blob/gh-pages/res/thumbnails/background.jpg?raw=true');
 }
 .navbar { 
   border-radius:0; 
