@@ -2,7 +2,7 @@
   box-sizing: border-box;
 }
 .bgimg {
-    background-image: url('../res/thumbnails/2.jpg');
+  background-image: url('../res/thumbnails/background.jpg');
 }
 .navbar { 
   border-radius:0; 
@@ -45,4 +45,17 @@
     flex: 100%;
     max-width: 100%;
   }
+}
+p{
+  text-align: justify;
+  text-justify: inter-word;
+  margin-top: 50px;
+  margin-right: 100px;
+  margin-left: 100px;
+  font-family:'Times New Roman', Times, serif;
+  font-size: 18px;
+  color:#505050;
+}
+body{
+  background-color:#F5F5F5;
 }
