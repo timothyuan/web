@@ -10,10 +10,10 @@ app.controller('ModalCtrl', function($sce, $scope, close, Id) {
 */
   this.config = {
     sources: [
-    {src: $sce.trustAsResourceUrl('https://github.com/timothyuan/web/blob/gh-pages/res/videos/'+Id+'.mp4?raw=true'), type: 'video/mp4'}
+    {src: $sce.trustAsResourceUrl('res/videos/'+Id+'.mp4'), type: 'video/mp4'}
     ],
     plugins: {
-      poster: 'https://github.com/timothyuan/web/blob/gh-pages/res/thumbnails/'+Id+'.jpg?raw=true'
+      poster: 'res/thumbnails/'+Id+'.jpg'
     }
   };
 
