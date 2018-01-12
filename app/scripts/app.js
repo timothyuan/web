@@ -32,6 +32,6 @@
  		templateUrl: 'views/people.html',
  		controller: 'MainCtrl',
  		controllerAs: 'main'
- 	})
+ 	});
 
  });

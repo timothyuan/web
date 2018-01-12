@@ -2,7 +2,7 @@
   box-sizing: border-box;
 }
 .bgimg {
-  background-image: url('../res/thumbnails/background.jpg');
+  background-image: url('https://uivjxg-bn1305.files.1drv.com/y4mO-8FTikdAyWFzI-ZNLerJVcvOcwkrKApXPWZkrUA7VevxPTvg7CL8iRbcoXapyFOxUMgw5kRBdnz7X2Exumfhc0rtnZTmEFW0QoISKY4qsq4b8FzBYdwpMN-eyNuYM_i17JlQ6moU_azhQ3K_WOXoVL_IeuSrvWzf6i6bQugpD-o-PUPA2VrV0lj1tSOoBUwp0mfimmcc6IkRK9r2ZQmTA');
 }
 .navbar { 
   border-radius:0; 
@@ -46,6 +46,7 @@
     max-width: 100%;
   }
 }
+
 p{
   text-align: justify;
   text-justify: inter-word;
@@ -58,4 +59,8 @@ p{
 }
 body{
   background-color:#F5F5F5;
+}
+
+.modal-body{
+  width: auto;
 }
