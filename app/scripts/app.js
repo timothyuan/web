@@ -19,9 +19,6 @@
  	]);
  app.config(function($stateProvider, $urlRouterProvider, $locationProvider) {
  	$urlRouterProvider.otherwise('/home');
- 	$locationProvider.html5Mode(true);
-    $locationProvider.hashPrefix('!');
-
  	$stateProvider
 
  	.state('home', {
