@@ -17,8 +17,10 @@
  	'com.2fdevs.videogular.plugins.overlayplay',
  	'com.2fdevs.videogular.plugins.poster'
  	]);
- app.config(function($stateProvider, $urlRouterProvider) {
+ app.config(function($stateProvider, $urlRouterProvider, $locationProvider) {
  	$urlRouterProvider.otherwise('/home');
+ 	$locationProvider.html5Mode(true);
+    $locationProvider.hashPrefix('!');
 
  	$stateProvider
 
