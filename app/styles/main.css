@@ -67,6 +67,7 @@ body{
     width: auto;
   }
   body{
+    padding:0;
     overflow:hidden;
   }
 }
