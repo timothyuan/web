@@ -66,9 +66,8 @@ body{
     max-height:294.375px;
     width: auto;
   }
-  body{
-    padding:0;
-    overflow:hidden;
+  html, body{
+    overflow-x:hidden;
   }
 }
 
