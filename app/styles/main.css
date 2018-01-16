@@ -8,26 +8,6 @@
   border-radius:0; 
   margin:0;
 }
-.row {
-  display: -ms-flexbox; /* IE10 */
-  display: flex;
-  -ms-flex-wrap: wrap; /* IE10 */
-  flex-wrap: wrap;
-  padding: 0 4px;
-}
-
-/* Create four equal columns that sits next to each other */
-.column {
-  -ms-flex: 25%; /* IE10 */
-  flex: 25%;
-  max-width: 25%;
-  padding: 0 4px;
-}
-
-.column img {
-  margin-top: 8px;
-  vertical-align: middle;
-}
 
 p{
   text-align: justify;
@@ -48,6 +28,41 @@ body{
   height:519.375px
 }
 
+.row {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* Clear floats after rows */ 
+.row: after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+  transition: all .3s ease-in-out;
+}
+
+.content:hover{
+  transform: scale(1.05);
+  box-shadow: 8px 8px 5px #C7C7C7;
+}
+
 @media(max-width: 1000px){
   .modal-body{
     max-height: 406.875px;
@@ -57,11 +72,6 @@ body{
 
 /* Responsive layout - makes a two column-layout instead of four columns */
 @media (max-width: 800px) {
-  .column {
-    -ms-flex: 50%;
-    flex: 50%;
-    max-width: 50%;
-  }
   .modal-body{
     max-height:294.375px;
     width: auto;
@@ -69,18 +79,26 @@ body{
   html, body{
     overflow-x:hidden;
   }
+  .column {
+    width: 50%;
+  }
 }
 
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media (max-width: 600px) {
-  .column {
-    -ms-flex: 100%;
-    flex: 100%;
-    max-width: 100%;
-  }
   p{
     margin-left: 50px;
     margin-right: 50px;
   }
+  .column {
+    width: 100%;
+  }
+}
+
+.normal{
+  margin-top: 10px;
+  margin-left: 0;
+  margin-right: 0;
+  text-align: center;
 }
