@@ -23,7 +23,9 @@
 
  	.state('home', {
  		url: '/home',
- 		templateUrl: 'views/home.html'
+ 		templateUrl: 'views/home.html',
+ 		controller: 'HomeCtrl',
+ 		controllerAs: 'home'
  	})
 
  	.state('people', {
